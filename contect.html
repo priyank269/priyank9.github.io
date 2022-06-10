@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: montserrat;
+        }
+        nav{
+            background: #0082e6;
+            height: 80px;
+            width: 100%;
+        }
+        lable.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background: #1b9bff;
+            transition: .5s;
+        }
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media (max-width: 952px) {
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center; 
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            a:hover,a.active{
+                background: none;
+                color: #0082e6;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+        }
+        
+        body {
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+    </style>
+</head>
+<body>
+    <!--Start Header-->
+    <nav>
+        <input type="checkbox" id="check">
+        <lable for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </lable>
+         <label class="logo" aria-hidden="true">Priyank Vasava</label>
+         <ul>
+            <li><a class="active" href="file:///C:/CE134_PRIYANKKUMAR%20RAMUBHAI%20VASAVA_HW_A_MINI_PROJECT_B3/home%20page.html">Home</a></li>
+             <li><a href="file:///C:/CE134_PRIYANKKUMAR%20RAMUBHAI%20VASAVA_HW_A_MINI_PROJECT_B3/About.html">About</a></li>
+             <li><a href="file:///C:/CE134_PRIYANKKUMAR%20RAMUBHAI%20VASAVA_HW_A_MINI_PROJECT_B3/services.html">Hobby</a></li>
+             <li><a href="file:///C:/CE134_PRIYANKKUMAR%20RAMUBHAI%20VASAVA_HW_A_MINI_PROJECT_B3/contect.html">Contect</a></li>
+        </ul>  
+    </nav>
+    <section></section>
+
+
+    </table>
+    <!--End Header-->
+     <!--Start Contact-->
+     <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                    <!-- Heading Start-->
+                    <tr>
+                        <td height="180" align="center" valign="middle" colspan="1">
+                                <font face="arial" color="#f3971b" size="6">
+                                     Contact
+                                </font>
+                                <hr width="70" color="#f3971b">
+                        
+                        </td>
+                    </tr>
+                    <!--Heading End-->
+                    <tr>
+                        <td align="center" valign="top">
+                           <table border="0" width="50%" cellpadding="15" cellspacing="10" align="center" bgcolor="#353535">
+                               <tr>
+                                   <td width="30%">
+                                       <font face="arial" size="4" color="#ffffff">
+                                           Name
+                                       </font>
+                                   </td>
+                                   <td width="70%">
+                                    <font face="arial" size="4" color="#ffffff">
+                                        <input type="text" size="40">
+                                    </font>
+                                    </td>
+                               </tr>
+                               <tr>
+                                <td width="30%">
+                                    <font face="arial" size="4" color="#ffffff">
+                                        Email
+                                    </font>
+                                </td>
+                                <td width="70%">
+                                 <font face="arial" size="4" color="#ffffff">
+                                     <input type="text" size="40">
+                                 </font>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">
+                                    <font face="arial" size="8" color="#ffffff">
+                                        Message
+                                    </font>
+                                </td>
+                                <td width="70%">
+                                 <font face="arial" size="8" color="#ffffff">
+                                     <textarea rows="5" cols="42"></textarea>
+                                 </font>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">
+                                   &nbsp;
+                                </td>
+                                <td width="70%">
+                                    <button type="Submit">
+                                        <font face="arial" size="4" color="#292929">
+                                             Submit
+                                        </font>
+                                </button>
+                                 </td>
+                            </tr>
+                           </table>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Contact-->
+
+    <!--Start Footer-->
+    <table id="header" border="1" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+        <tr>
+            <td>
+                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                   
+                    <tr>
+                        
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-instagram" aria-hidden="true"></span>
+                                <a href="https://www.instagram.com/">Instagram</a>
+                            </font>
+                            
+                        </td>
+                        <td rowspan="2"></td>
+                        <td width="25%" valign="top">
+                            <font face="arial" color="#f3971b" size="5">
+                                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                                <a href="mailto:vasavapriyank9@gmail.com">Send Email</a>
+
+                            </font>
+                            
+                        </td>
+                       </tr>
+                    <tr>
+                        <td colspan="3">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+
+    </table>
+    <!--End Footer-->
+</body>
+</html>
